@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>ngitung banyu</title>
+	<script src="js/main.js"> </script>
+</head>
+<body bgcolor="#E6E6FA" style="margin-top:3vw">
+	<h1 style="font-size:2em;text-align:center;">SISTEM TAGIHAN AIR</h1>
+	<h1 style="font-size:1em;text-align:center;">PAB SUMBER AGUNG</h1>
+	<form name='autoSumForm'>
+		<table border='1' width='90%'  align='center' style="background-color: white;border-color: black;">
+			<tr style="height:4vw">
+				<td style="font-size:1.5em;text-align:center;padding:5px 1px 1px 1px;background-color: white;border-color: black;" colspan='2'> Penghitungan Debit air </td>
+			</tr>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:45%;">Meteran Awal</td>
+				<td style="width:35%;"><input type='text' name='meteran_awal' placeholder="meteran awal" style="width:99%;text-align:right;" size="20"  onFocus="startCalc();" onBlur="stopCalc();" /></td>
+			</tr>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:45%;">Meteran Sekarang</td>
+				<td style="width:35%;"><input type='text' placeholder="meteran sekarang" name='meteran_skr'  style="width:99%;text-align:right;"  size='23'   onFocus="startCalc();" onBlur="stopCalc();" /></td>
+			</tr>
+				<td style="padding:5px 1px 1px 5px;width:45%;">Selisih Debit</td>
+				<td style="width:35%;"><input readonly style="width:99%;text-align:right;" type=text value='0' name="selisih" size='23' readonly> </td>
+			</tr>
+		</table>
+<br>
+		<table border='1' width='90%'  align='center'>
+			<tr style="height:4vw">
+				<td style="font-size:1.5em;text-align:center;padding:5px 1px 1px 1px;" colspan='2'> Penghitungan Biaya</td>
+			</tr>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:35%;">1-20/m<sup>3</sup> </td>
+				<td style="width:25%;"><input style="width:99%;text-align:right;height:99%" readonly type=text value='0' name="duaribu" size='23' readonly></td>
+			</tr>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:35%;">21-30/m<sup>3</sup> </td>
+				<td style="width:25%;"><input readonly style="width:99%;text-align:right;" type=text value='0' name="tigaribu" size='23' readonly></td>
+			</tr>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:35%;">30-dst/m<sup>3</sup></td>
+				<td style="width:25%;"><input readonly style="width:99%;text-align:right;" type=text value='0' name="limaribu" size='23' readonly> </td>
+			</tr>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:35%;">Beban</td>
+				<td style="width:25%;"><input id="cekbok" type=text style="width:99%;text-align:right;" value='4000' name="beban" size='23'></td>
+	<!-- <input type="checkbox" name="edit">edit -->
+			</tr>
+		</table>
+<br>
+		<table border='1' width='90%'  align='center' style="background-color:white";>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:35%;">Kekurangan</td>
+				<td style="width:25%;"><input  type=text style="width:99%;text-align:right;" name="kurang" size='23' placeholder="kekurangan bulan lalu" onFocus="startCalc();" onBlur="stopCalc();"> </td>
+			</tr>
+			<tr>
+				<td style="padding:5px 1px 1px 5px;width:35%;background-color: white;">Jumlah total</td>
+				<td style="width:25%;"><input  type=text value='0' name="jumlah" size='23' style="width:99%;text-align:right;" /></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<br>
+	<!-- <p style="font-size:1em;text-align:center;">By KKN UNY G009 2019</p> -->
+	<p style="font-size:1em;text-align:center;">Jalakan,Triharjo, Pandak, Bantul, D.I.Y</p>
+</body>
+</html>

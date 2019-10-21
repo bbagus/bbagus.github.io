@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Fjalla One', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	background-image: url("Jimmy.png");
+	font-size: 10px;
+	background-size: 23%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.content {
+	background-color: #cfc;
+	width: 75%;
+	max-width: 800px;
+	box-shadow: 5px 5px 9px #333;
+	padding: 10px;
+}
+
+#quiz {
+    display:none;
+	margin-top: 50px;
+	font-size: 30px;
+	text-align: justify;
+}
+
+.h2, h2 {
+    font-size: 40px;
+    margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+	margin-top: 0;
+
+}
+
+input[type="radio"] {
+	margin-right: 15px;
+}
+button {
+	position: relative;
+    margin-bottom: 10px;
+    align-content: center;
+    float: right;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #333;
+    padding: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}    
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-right: 25%;
+
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin-right: 25%;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+#prev {
+    display:none;
+}
+
+#start {
+    display:none;
+    width: 90px;
+}
+
+#warning {
+	color: #800000;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+@media(max-width: 767px){
+	#start {
+		margin-left: 25px;
+	}
+}
+
+img {
+  max-width: 35%;
+  max-height: 35%;
+  padding: 5px;
+  margin-bottom: 0px;
+  float: left;
+}
+
+       
