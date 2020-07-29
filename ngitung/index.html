@@ -14,10 +14,13 @@
 	<h1 style="font-size:2em;text-align:center;">SISTEM TAGIHAN AIR</h1>
 	<h1 style="font-size:1em;text-align:center;">PAB SUMBER AGUNG</h1>
 	<form name='autoSumForm'>
-		<table border='1' width='90%'  align='center' style="background-color: white;border-color: black;">
-			<tr style="height:4vw">
-				<td style="font-size:1.5em;text-align:center;padding:5px 1px 1px 1px;background-color: white;border-color: black;" colspan='2'> Penghitungan Debit air </td>
-			</tr>
+		<table class="table" border='1' width='90%'  align='center' style="background-color: white;border-color: black;">
+			<thead>
+				<tr style="height:4vw">
+					<th style="font-size:1.5em;text-align:center;padding:5px 1px 1px 1px;background-color: white;border-color: black;" colspan='2'> Penghitungan Debit air </td>
+				</tr>
+			</thead>
+			<tbody>
 			<tr>
 				<td style="padding:5px 1px 1px 5px;width:45%;">Meteran Awal</td>
 				<td style="width:35%;"><input type='text' name='meteran_awal' placeholder="meteran awal" style="width:99%;text-align:right;" size="20"  onFocus="startCalc();" onBlur="stopCalc();" /></td>
@@ -29,6 +32,7 @@
 				<td style="padding:5px 1px 1px 5px;width:45%;">Selisih Debit</td>
 				<td style="width:35%;"><input readonly style="width:99%;text-align:right;" type=text value='0' name="selisih" size='23' readonly> </td>
 			</tr>
+			</tbody>
 		</table>
 <br>
 		<table border='1' width='90%'  align='center'>
